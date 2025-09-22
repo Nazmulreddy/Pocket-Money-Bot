@@ -7,7 +7,7 @@
     <title>Pocket Money App</title>
 
     <!-- Your New Ad Code -->
-    <script src='//libtl.com/sdk.js' data-zone='9913797' data-sdk='show_9913797'></script>
+    <script src='//libtl.com/sdk.js' data-zone='9917141' data-sdk='show_9917141'></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -746,7 +746,7 @@
                 return showAlert("You have reached your daily ad watch limit.");
             }
 
-            if (typeof window.show_9913797 !== 'function') {
+            if (typeof window.show_9917141 !== 'function') {
                 return showAlert("Ad service is currently unavailable. Please try again later.");
             }
 
@@ -755,13 +755,13 @@
             try {
                 switch (taskType) {
                     case 'interstitial':
-                        adPromise = window.show_9913797();
+                        adPromise = window.show_9917141();
                         break;
                     case 'popup':
-                        adPromise = window.show_9913797('pop');
+                        adPromise = window.show_9917141('pop');
                         break;
                     case 'inApp':
-                        adPromise = window.show_9913797({
+                        adPromise = window.show_9917141({
                             type: 'inApp',
                             inAppSettings: {
                                 frequency: 2,
@@ -773,7 +773,7 @@
                         });
                         break;
                     case 'miniApp':
-                        adPromise = window.show_9913797();
+                        adPromise = window.show_9917141();
                         break;
                     default:
                         return;
@@ -816,4 +816,4 @@
     </script>
 </body>
 
-</html>
+                        </html>
