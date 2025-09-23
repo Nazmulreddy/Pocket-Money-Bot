@@ -788,8 +788,8 @@
                 userData.dailyAdCount = newCount;
 
                 let rewardAmount = 0;
-                if (taskType === 'miniApp') rewardAmount = 50;
-                else if (taskType !== 'inApp') rewardAmount = 25;
+                if (taskType === 'miniApp') rewardAmount = 25;
+                else if (taskType !== 'inApp') rewardAmount = 10;
 
                 if (rewardAmount > 0) {
                     await updateBalance(rewardAmount);
